@@ -1,0 +1,131 @@
+TextWindow.WriteLine("Hello my g, you using the calc?")
+TextWindow.WriteLine("Y/N")
+Choice = TextWindow.Read()
+
+If Choice = "N" Then
+    EndIf
+
+If Choice = "Y" Then 
+    TextWindow.WriteLine("Ok, are you cheating on the maths homework? I guess so")
+    TextWindow.WriteLine("Ight what do you want to do")
+    TextWindow.WriteLine("Add, Subtract, divide, Calculate angles, multiply, find the average, multiply, and divide?")
+    CalcC = TextWindow.Read()
+
+    If CalcC = "Add" Then
+        TextWindow.WriteLine("Ok what is your first varaible?")
+        Av1 = TextWindow.ReadNumber()
+        TextWindow.WriteLine("Second?")
+        Av2 = TextWindow.ReadNumber()
+        TextWindow.WriteLine("The answer is")
+        TextWindow.WriteLine(Av1 + Av2)
+    EndIf 
+
+    If CalcC = "Subtract" Then
+        TextWindow.WriteLine("Ok what is your first varaible?")
+        Sv1 = TextWindow.ReadNumber()
+        TextWindow.WriteLine("Second?")
+        Sv2 = TextWindow.ReadNumber()
+        TextWindow.WriteLine("The answer is")
+        TextWindow.WriteLine(Sv1 - Sv2)
+    EndIf  
+    
+    If CalcC = "Calculate angles" Then
+        TextWindow.WriteLine("Are you doing Triangles, Squares or Pentagons")
+        AC = TextWindow.Read()
+
+        If AC = "Triangles" Then
+            TextWindow.WriteLine("Note: this is to figure out one angle!")
+            TextWindow.WriteLine("Ok what is your first varaible?")
+            ATv1 = TextWindow.ReadNumber()
+            TextWindow.WriteLine("Second?")
+            ATv2 = TextWindow.ReadNumber()
+            TextWindow.WriteLine("The answer is")
+            TextWindow.WriteLine((ATv1 + ATv2) - 180 )
+        EndIf
+
+        If AC = "Squares" Then
+            TextWindow.WriteLine("Note: this is to figure out one angle!")
+            TextWindow.WriteLine("Ok what is your first varaible?")
+            ASv1 = TextWindow.ReadNumber()
+            TextWindow.WriteLine("Second?")
+            ASv2 = TextWindow.ReadNumber()
+            TextWindow.WriteLine("Third?")
+            ASv3 = TextWindow.ReadNumber()
+            TextWindow.WriteLine("The answer is")
+            TextWindow.WriteLine((ASv1 + ASv2 + ASv3) - 360 )
+        EndIf
+        
+        If AC = "Pentagons" Then
+            TextWindow.WriteLine("Note: this is to figure out one angle!")
+            TextWindow.WriteLine("Ok what is your first varaible?")
+            APv1 = TextWindow.ReadNumber()
+            TextWindow.WriteLine("Second?")
+            APv2 = TextWindow.ReadNumber()
+            TextWindow.WriteLine("Third?")
+            APv3 = TextWindow.ReadNumber()
+            TextWindow.WriteLine("Fourth")
+            APv4 = TextWindow.ReadNumber()
+            TextWindow.WriteLine("The answer is")
+            TextWindow.WriteLine((APv1 + APv2 + APv3 + APv4) - 540 )
+            EndIf
+    EndIf
+
+    If CalcC = "Average" Then
+        TextWindow.WriteLine("Ok what is your first varaible?")
+        AVGv1 = TextWindow.ReadNumber()
+        TextWindow.WriteLine("Second?")
+        AVGv2 = TextWindow.ReadNumber()
+        TextWindow.WriteLine("Any more variables?")
+        TextWindow.WriteLine("Y/N")
+        AVGvC = TextWindow.Read()
+        If AVGvC = "N" Then
+            TextWindow.WriteLine("Then answer is")
+            TextWindow.WriteLine((AVGv1 + AVGv2)/2)
+        EndIf
+        If AVGvC = "Y" Then
+            TextWindow.WriteLine("Ok what is your third varaible?")
+            AVGv3 = TextWindow.ReadNumber()
+            TextWindow.WriteLine("Any more variables?")
+            TextWindow.WriteLine("Y/N")
+            AVGvC2 = TextWindow.Read()
+            If AVGvC2 = "N" Then
+                TextWindow.WriteLine("Then the answer is")
+                TextWindow.WriteLine((AVGv1 + AVGv2 + AVGv3)/3)
+            EndIf
+            If AVGvC2 = "Y" Then
+                TextWindow.WriteLine("Ok what is your fourth varaible?")
+                AVGv4 = TextWindow.ReadNumber()
+                TextWindow.WriteLine("Any more variables?")
+                TextWindow.WriteLine("Y/N")
+                AVGvC3 = TextWindow.Read()
+                If AVGvC3 = "N" Then
+                    TextWindow.WriteLine("Then the answer is")
+                    TextWindow.WriteLine((AVGv1 + AVGv2 + AVGv3 + AVGv4)/4)
+                EndIf
+                If AVGvC3 = "Y" Then
+                    TextWindow.WriteLine("Ok what is your fifth varaible?")
+                    AVGv5 = TextWindow.ReadNumber()
+                    TextWindow.WriteLine((AVGv1 + AVGv2 + AVGv3 + AVGv4 + AVGv5)/5)
+                EndIf    
+            EndIf
+        EndIf
+
+    If CalcC = "Multiply" Then
+        TextWindow.WriteLine("Ok what is your first varaible?")
+        Mv1 = TextWindow.ReadNumber()
+        TextWindow.WriteLine("Second?")
+        Mv2 = TextWindow.ReadNumber()
+        TextWindow.WriteLine("The answer is")
+        TextWindow.WriteLine(Mv1 * Mv2)
+    EndIf
+    
+    If CalcC = "Divide" Then
+        TextWindow.WriteLine("Ok what is your first varaible?")
+        Dv1 = TextWindow.ReadNumber()
+        TextWindow.WriteLine("Second?")
+        Dv2 = TextWindow.ReadNumber()
+        TextWindow.WriteLine("The answer is")
+        TextWindow.WriteLine(Dv1 / Dv2)
+    EndIf 
+EndIf
+EndIf
