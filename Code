@@ -8,7 +8,7 @@ If Choice = "N" Then
 If Choice = "Y" Then 
     TextWindow.WriteLine("Ok, are you cheating on the maths homework? I guess so")
     TextWindow.WriteLine("Ight what do you want to do")
-    TextWindow.WriteLine("Add, Subtract, divide, Calculate angles, multiply, find the average, multiply, and divide?")
+    TextWindow.WriteLine("Add, Subtract, divide, Calculate Angles, multiply, Average, Multiply, and Divide?")
     CalcC = TextWindow.Read()
 
     If CalcC = "Add" Then
@@ -29,7 +29,7 @@ If Choice = "Y" Then
         TextWindow.WriteLine(Sv1 - Sv2)
     EndIf  
     
-    If CalcC = "Calculate angles" Then
+    If CalcC = "Calculate Angles" Then
         TextWindow.WriteLine("Are you doing Triangles, Squares or Pentagons")
         AC = TextWindow.Read()
 
